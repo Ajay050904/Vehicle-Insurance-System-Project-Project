@@ -1,0 +1,70 @@
+I can certainly help you describe the flow of your vehicle insurance system based on the provided code. Here's a textual representation of the flow:
+
+1. **Start**
+2. Display a welcome message and instructions to enter vehicle details.
+   - Display options: Login or Register.
+3. User makes a choice.
+   - If the choice is `1` (Login), go to step 4.
+   - If the choice is `2` (Register), go to step 5.
+   - If the choice is invalid, throw an exception and display an error message.
+
+4. **Login**
+   - Prompt the user to enter vehicle number, owner name, and insurance ID.
+   - Connect to the database.
+   - Execute a query to retrieve insurance data.
+   - If data is found, display the insurance details.
+   - If data is not found, display an error message.
+
+5. **Register**
+   - Prompt the user to enter vehicle details: number, owner name, type, insurance ID, start date, and end date.
+   - Connect to the database.
+   - Execute a query to insert the provided details into the database.
+   - Display a message indicating if the record was successfully inserted or not.
+
+6. **End**
+
+Please note that the flowchart I've described here is based on the logic of your code. If there are additional functionalities or error handling scenarios, those would need to be integrated into the flowchart as well. If you have specific questions or need further clarification on any part of the code or flow, feel free to ask!
+
+
+
+Start
+ |
+ v
+User Chooses Option (1 or 2)
+ |
+ v
+If Option is 1
+ |
+ v
+Call loginDetails()
+ |
+ v
+End
+
+If Option is 2
+ |
+ v
+Call registerDetails()
+ |
+ v
+End
+
+Start
+ |
+ v
+User Enters Vehicle Details
+ |
+ v
+Establish Database Connection
+ |
+ v
+Prepare SQL Query for Insertion
+ |
+ v
+Execute Query
+ |
+ v
+Check if Data Inserted Successfully
+ |
+ v
+End

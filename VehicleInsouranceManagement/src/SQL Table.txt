@@ -1,0 +1,18 @@
+SQL> desc INSURANCEDATA;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ VEHICLENUMBER                                      VARCHAR2(10)
+ OWNERNAME                                          VARCHAR2(20)
+ VEHICLETYPE                                        VARCHAR2(15)
+ INSURANCEID                                        NUMBER(15)
+ STARTDATE                                          DATE
+ ENDDATE					    DATE
+
+SQL> select * from INSURANCEDATA;
+
+VEHICLENUM OWNERNAME            VEHICLETYPE     INSURANCEID STARTDATE ENDDATE
+---------- -------------------- --------------- ----------- --------- ---------
+UP78GL6375 AJAY                 SCOOTY               101017
+HR26EY0001 ELVISH               CAR                  101019 15-JUN-23 15-JUN-24
+HR26EX0009 NISCHAY              CAR                  101021 09-OCT-23 09-OCT-24
+
